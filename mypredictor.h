@@ -41,8 +41,32 @@ int HL[NHIST + 1] = { 0, 0, 3, 7, 15, 31, 63, 90, 127 };
 #endif
 //END 32 KB//
 
+
+// 16KB //
+#define K16
+#ifdef K16
+// 16KB
+// 65378 bits
+#define UWIDTH 2
+#define LOGLDATA 8
+#define LOGBANK 6 // entries for each bank in VTAGE ( 1 << 6 = 64)
+#define TAGWIDTH 12
+#define NBBANK 47 // num of banks in VTAGE
+
+#define NHIST 8
+int HL[NHIST + 1] = { 0, 0, 3, 7, 15, 31, 63, 90, 127 };
+
+#define LOGSTR 4
+#define NBWAYSTR 3
+#define TAGWIDTHSTR 14
+#define LOGSTRIDE 20
+#endif
+//END 16KB //
+
+
+
 // 8KB //
-#define K8
+// #define K8
 #ifdef K8
 // 8KB
 // 4.026 //3.729 Stride only // 3.437 for TAGE  only
