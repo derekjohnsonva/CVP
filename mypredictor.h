@@ -46,7 +46,7 @@ int HL[NHIST + 1] = { 0, 0, 3, 7, 15, 31, 63, 90, 127 };
 #define K16
 #ifdef K16
 // 16KB
-// 65378 bits
+// 131009 bits
 #define UWIDTH 2
 #define LOGLDATA 8
 #define LOGBANK 6 // entries for each bank in VTAGE ( 1 << 6 = 64)
