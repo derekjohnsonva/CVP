@@ -1,0 +1,26 @@
+---- IPD With No Changes ----
+-- 8kb --
+compute_int_18.gz: IPD = 4.198
+compute_int_25.gz: IPD = 8.050
+compute_int_26.gz: IPD = 4.078
+compute_int_27.gz: IPD = 1.037
+compute_int_9.gz: IPD = 3.369
+srv_0.gz: IPD = 1.594
+srv_10.gz: IPD = 1.665
+srv_20.gz: IPD = 1.530
+srv_30.gz: IPD = 3.799
+srv_40.gz: IPD = 2.736
+Average: 3.2056
+
+-- 32kb --
+compute_int_18.gz: IPD = 4.190
+compute_int_25.gz: IPD = 8.070
+compute_int_26.gz: IPD = 4.413
+compute_int_27.gz: IPD = 1.035
+compute_int_9.gz: IPD = 3.383
+srv_0.gz: IPD = 1.592
+srv_10.gz: IPD = 1.663
+srv_20.gz: IPD = 1.528
+srv_30.gz: IPD = 3.801
+srv_40.gz: IPD = 2.736
+Average: 3.2411
