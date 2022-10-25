@@ -50,16 +50,16 @@ int HL[NHIST + 1] = { 0, 0, 3, 7, 15, 31, 63, 90, 127 };
 #define UWIDTH 2
 #define LOGLDATA 8
 #define LOGBANK 6 // entries for each bank in VTAGE ( 1 << 6 = 64)
-#define TAGWIDTH 12
-#define NBBANK 47 // num of banks in VTAGE
+#define TAGWIDTH 11
+#define NBBANK 46 // num of banks in VTAGE
 
 #define NHIST 8
 int HL[NHIST + 1] = { 0, 0, 3, 7, 15, 31, 63, 90, 127 };
 
 #define LOGSTR 4
-#define NBWAYSTR 3
-#define TAGWIDTHSTR 14
-#define LOGSTRIDE 20
+#define NBWAYSTR 5
+#define TAGWIDTHSTR 20
+#define LOGSTRIDE 21
 #endif
 //END 16KB //
 
@@ -113,14 +113,14 @@ int HL[NHIST + 1] =
 
 #define WIDTHCONFID 3
 #define MAXCONFID ((1<< WIDTHCONFID)-1)
-#define WIDTHCONFIDSTR 5
+#define WIDTHCONFIDSTR 16
 #define MAXCONFIDSTR  ((1<< WIDTHCONFIDSTR)-1)
 #define MAXU  ((1<< UWIDTH)-1)
 
 #define BANKDATA (1<<LOGLDATA)
 #define MINSTRIDE -(1<<(LOGSTRIDE-1))
 #define MAXSTRIDE (-MINSTRIDE-1)
-#define BANKSIZE (1<<LOGBANK)
+#define BANKSIZE (1<<(LOGBANK))
 #define PREDSIZE (NBBANK*BANKSIZE)
 
 #include <unordered_map>
